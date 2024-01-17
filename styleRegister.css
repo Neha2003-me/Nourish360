@@ -1,0 +1,91 @@
+body {
+    background-image: url("./images/register.png");
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-position: center center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.627);
+    padding: 20px;
+    /* opacity: 0.4; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 560px; /* You can adjust the width as needed */
+    display: flex;
+    /* align: center center; */
+    /* text-align: center; */
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    /* align: center center; */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 15px;
+    width:480px;
+    margin-left: 30px;
+    align: center center;
+    
+}
+button{
+    padding:10px;
+    margin-left:40%;
+    width:30%;
+    background-color:#ff5757;
+    border:none;
+    color:white;
+    border-radius:20px;
+    font-size:1.4vw;
+    opacity:1;
+
+}
+label {
+    margin-bottom: 5px;
+    margin-left: 30px; /* Adjust the margin as needed */
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 30px; /* Adjust the margin as needed */
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #9ed1e1;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    margin-left: 30px;
+}
+.error{
+    margin-left: 30px;
+    
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.input-group.success input{
+    border-color: #0cc477;
+    margin-left: 30px;
+}
+
+.input-group.error input{
+    /* border-color:rgb(206, 67, 67); */
+    margin-left: 30px;
+}
