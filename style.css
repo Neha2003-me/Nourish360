@@ -24,6 +24,7 @@ body{
     display: flex;
     position: absolute;
     right: 8vw;
+    font-size: 1.5vw;
     top:1vw;
     align-items: center;
     justify-content: space-evenly;
@@ -161,7 +162,9 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.dots{
+  visibility: hidden;
+}
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -211,6 +214,7 @@ img {vertical-align: middle;}
 .about{
     position: relative;
     top:47vw;
+
 }
  .h1{ 
     display: flex; 
@@ -225,6 +229,10 @@ img {vertical-align: middle;}
     border-radius: 20px ;
     text-align: center;
     background-color: #9ED1E1;
+    font-size: 1.5vw;
+}
+.about h4{
+  font-size: 1.5vw;
 }
   
 .h1:before, 
@@ -250,6 +258,10 @@ img {vertical-align: middle;}
     margin: 0 5vw;
     position: relative;
 
+}
+.vision p{
+  font-size: 1vw;
+  margin-left: 1.7vw;
 }
 .visions .img1{
     width:20vw;
@@ -385,8 +397,8 @@ transition: all 0.3s ease;
 /* EVENT ICON HOLDER  */
 .event-calendar .event-icon{
   position:absolute;
-  width:auto;
-  height:6vw;
+  width:4vw;
+  height:7vw;
   display:block;
   background:#9ED1E1;
   left:0.4vw;
@@ -398,9 +410,7 @@ transition: all 0.3s ease;
   width: 6vw;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  
-  padding:2px 10px;
-    
+  padding:0.2vw 0.1vw;
 }
 
 .event-calendar .event-icon .month,
@@ -425,11 +435,12 @@ transition: all 0.3s ease;
 .title-event{
   position: relative;
   left:7vw;
+  font-size: 1.5vw;
 }
 .buttons {
   position: absolute;
   right: 4vw;
-  top:2.8vw;
+  top: 2.1rem;
   color: #fff;
   background-color: #FF5757;
   border:none ;
@@ -477,7 +488,7 @@ header .menu{
 }
 /* css slider */
 .slider{
-  height: 90vh;
+  height: 45vw;
   margin-top: 2vw;
   position: relative;
   width:95%;
@@ -493,16 +504,18 @@ header .menu{
 }
 .slider .list .item img{
   width: 100%;
-  height: 100%;
+  height: 70vw;
   object-fit: cover;
 }
 .slider .list .item::after{
   content: '';
   width: 100%;
-  height: 100%;
+  
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 130vw;
+  
+ 
   background-image: linear-gradient(
       to top, #000000b2 2%, transparent
   );
@@ -561,8 +574,8 @@ header .menu{
   background-color: #eee5;
   border: none;
   font-family: monospace;
-  width: 40px;
-  height: 40px;
+  width: 4.5vw;
+  height: 4.5vw;
   border-radius: 5px;
   font-size: x-large;
   color: #eee;
@@ -578,7 +591,9 @@ header .menu{
   z-index: 11;
   display: flex;
   gap: 10px;
+  height: 12vw;
   width: 100%;
+  top: 33vw;
   padding: 0 1vw;
   box-sizing: border-box;
   overflow: auto;
@@ -586,13 +601,15 @@ header .menu{
 }
 .thumbnail::-webkit-scrollbar{
   width: 0;
+  
 }
 .thumbnail .item{
   width: 10vw;
   height: 13vw;
-  filter: brightness(.5);
+  filter: brightness(.5); 
   transition: .5s;
   flex-shrink: 0;
+  
 }
 .thumbnail .item img{
   width: 95%;
@@ -602,11 +619,14 @@ header .menu{
 }
 .thumbnail .item.active{
   filter: brightness(1.5);
+  
 }
 .thumbnail .item .content{
   position: absolute;
   inset: auto 10px 10px 10px;
+  height: 40vw;
 }
+
 .content p, h2{
   color:#fff;
 }
@@ -697,9 +717,9 @@ ul {
   position: relative;
   top:65vw;
 }
-@media(max-width: 767px) {
+/* @media(max-width: 767px) {
   .footer-col {
-    width: 50%;
+    width: ;
     margin-bottom: 30px;
   }
 }
@@ -708,7 +728,7 @@ ul {
   .footer-col {
     width: 100%;
   }
-}
+} */
 @media screen and (max-width: 678px) {
   .thumbnail{
       justify-content: start;
@@ -720,6 +740,3 @@ ul {
       top: 10%;
   }
 }
-
-
-
