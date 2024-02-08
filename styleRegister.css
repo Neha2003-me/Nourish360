@@ -12,80 +12,100 @@ body {
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.627);
+    background-color: black;
     padding: 20px;
-    /* opacity: 0.4; */
+    opacity: 0.6;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    width: 560px; /* You can adjust the width as needed */
+    width: 90%;
+    max-width: 560px;
     display: flex;
-    /* align: center center; */
-    /* text-align: center; */
+    flex-direction: column;
 }
 
 #form {
     display: flex;
     flex-direction: column;
-    /* align: center center; */
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
     color: white;
     margin-bottom: 15px;
-    width:480px;
-    margin-left: 30px;
-    align: center center;
-    
+    margin-right: 29px;
+    margin-left: 10px;
 }
-button{
-    padding:10px;
-    margin-left:40%;
-    width:30%;
-    background-color:#ff5757;
-    border:none;
-    color:white;
-    border-radius:20px;
-    font-size:1.4vw;
-    opacity:1;
-
-}
-label {
-    margin-bottom: 5px;
-    margin-left: 30px; /* Adjust the margin as needed */
+.input-group-1 {
+    color: white;
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
+button,
+input[type="submit"] {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ff5757;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.4vw; 
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #b42a2a; 
+}
+
+label,
 select,
 input[type="text"],
 input[type="password"] {
     padding: 8px;
     margin-bottom: 10px;
-    margin-left: 30px; /* Adjust the margin as needed */
+    margin-right: 29px;
+    width: 100%;
+
 }
 
 input[type="submit"] {
     padding: 10px;
+    width: 50%;
+    margin: 0 auto;
     background-color: #007BFF;
     color: #9ed1e1;
     border: none;
-    /* border-radius: 4px; */
     cursor: pointer;
+    font-size: 1.4vw; 
+}
+
+.error {
     margin-left: 30px;
 }
-.error{
-    margin-left: 30px;
-    
-}
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-.input-group.success input{
+
+.input-group.success input {
     border-color: #0cc477;
     margin-left: 30px;
 }
 
-.input-group.error input{
-    /* border-color:rgb(206, 67, 67); */
+.input-group.error input {
     margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+    
+    button,
+    input[type="submit"] {
+        font-size: 5vw;
+    }
+    
+    input[type="submit"] {
+        font-size: 4vw;
+    }
 }
