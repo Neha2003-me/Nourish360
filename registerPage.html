@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register as</title>
     <style>
-        body{
-            background-image: url("./images/register.png");
+        body {
+    background-image: url("./images/register.png");
     background-size: cover; 
     background-attachment: fixed;
     margin: 0;
@@ -16,56 +15,81 @@
     display: flex;
     justify-content: center;
     height: 100vh; 
-    width:100%;
-    overflow-x: hidden;
-        }
-        h1{
-            position: relative;
-            top:-10vw;
-            left:35%;
-           font-size: 5vw;
-           color:white;
-           width:300px;
-           text-align: center;
-        }
-        #box{
-            width: 100%;
-            display: flex;
-        }
-        a{
-            width:100%;
-           
-        }
-        #as{
-          position: relative;
-          margin-left: 8vw;
-        }
-        button{
-            width: 20vw;
-            border: none;
-            background-color: #FF5757 ;
-            color:white;
-            height: 3vw;
-            margin-left: 3vw;
-            border-radius: 20px;
-            font-size: 1.5vw;
-            position: relative;
-            left:-17vw;
-        }
-        button:hover{
-            color:#9ED1E1;
-        }
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    opacity: 0.6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5757;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.4vw; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d64040;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        font-size: 4vw;
+    }
+}
     </style>
+    <title>Register as</title>
 </head>
 <body>
-   <h1 id="h1">
-        REGISTER
-    </h1>
-    <h1 id="as">AS</h1>
-    <div id="box">
-        <a href="register.html" target="_blank"><button>VOLUNTEER</button></a>
-        <a href="register.html" target="_blank"><button>ORGANISATION</button></a>
-        <a href="register.html" target="_blank"><button>CONTRIBUTOR</button></a>
+    <div id="bgg">
+        <div class="container">
+            <h1>REGISTER</h1>
+            <div class="buttons">
+                <button onclick="goToRegister('volunteer')">As a volunteer</button>
+                <button onclick="goToRegister('organization')">As an organization</button>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function goToRegister(type) {
+    if (type === 'volunteer') {
+        window.location.href = 'register.html';
+    } else if (type === 'organization') {
+        window.location.href = 'register.html';
+    }
+}
+    </script>
 </body>
 </html>
