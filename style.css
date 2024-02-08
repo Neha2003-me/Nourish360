@@ -1082,6 +1082,10 @@ h1.community{
    top:-2.6vw;
   
 }
+    button#top-nav-toggle.top-bar__nav-toggle span{
+  width:10vw;
+  height: 1vw;
+}
   .mySlides img{
     height: 70vh;
     top:0vh;
