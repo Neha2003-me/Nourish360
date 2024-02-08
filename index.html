@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="header">
+      <div class="navigation">
         <div class="logo"><img src="images/nourish.png" alt=""></div>
         <div class="donate">
           <a href="#">
@@ -25,43 +26,66 @@
             <li><a href="#"><button id="register"><a href="registerPage.html" target="_blank">REGISTER</a></button></a></li>
            </ul>
         </div>
-       
+      </div>
+      <div class="top-bar">
+        <button class="top-bar__nav-toggle hamburger" id="top-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="top-bar__brand"><div class="logo"><img src="images/nourish.png" alt=""></div></a>
+        <div class="top-bar__social">
+          <a href="#"><button id="register"><a href="registerPage.html" target="_blank">REGISTER</a></button></a>
+        </div>
+        <nav class="top-bar__nav collapsed" id="top-bar__nav">
+          <ul class="top-bar__nav-list ">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+    
   
-  
-  <h1 class="community">JOIN THE COMMUNITY</h1>
+  <!-- <h1 class="community">JOIN THE COMMUNITY</h1>S -->
   <div class="slideshow-container">
   
   <!-- Slide 1 -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="./images/image1.jpg" style="width: 97vw; height: 40vw; object-position: center;">
+    
+    <img src="./images/image1.jpg" style="width: 97vw; object-position: center;">
   </div>
   
   <!-- Slide 2 -->
   <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="./images/image2.jpg" style="width: 97vw; height: 40vw; object-position: center;">
+    
+    <img src="./images/image2.jpg" style="width: 97vw; object-position: center;">
   </div>
   
   <!-- Slide 3 -->
   <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="./images/image3.jpg" style="width: 97vw; height: 40vw; object-position: center;">
+    
+    <img src="./images/image3.jpg" style="width: 97vw; object-position: center;">
     
   </div>
   
   <!-- Slide 4 -->
   <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="./images/image4.jpg" style="width: 97vw; height: 40vw; object-position:top;">
+    
+    <img src="./images/image4.jpg" style="width: 97vw; object-position:top;">
    
   </div>
   
   <!-- Slide 5 -->
   <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="./images/image5.jpg" style="width: 97vw; height: 40vw; object-position: center;">
+
+      <img src="./images/image5.jpg" style="width: 97vw;object-position: center;">
  
+  </div>
+  <div>
+    <h1 class="community">JOIN THE COMMUNITY</h1>
+
   </div>
   
   </div>
@@ -84,33 +108,30 @@
     <div class="vision">
         <h1 class="h1">OUR VISION</h1>
         <div class="visions">
-            <div><img class="img1" src="./images/vision1.png" alt="">
+            <div id="vision-holder"><img class="img1" src="./images/vision1.png" alt="">
               <h4>Zero hunger:<br> A battle <br>to conquer</h4>
-            <p>Nourish360 envisions a world without hunger. Our mission is rooted in the belief that access to meals is a fundamental right for every individual. We strive for a future where hunger is eradicated, ensuring that everyone can thrive with the sustenance they need.
-            </p></div>
-            <div><img class="img2" src="./images/vision2.png" alt=""> 
+            </div>
+            <div id="vision-holder"><img class="img2" src="./images/vision2.png" alt=""> 
               <h4>Building a Powerful Community: United for Change
               </h4>
-              <p>In the spirit of our vision, Nourish360 is all about building a powerful community united by a shared commitment to eradicate hunger. We bring together individuals who are passionate about making a positive impact. Through our platform, this community collaborates to organize events, camps, and initiatives, channeling collective energy into tangible efforts that directly alleviate the challenges of food insecurity. 
-              </p></div>
-            <div>
+              </div>
+            <div id="vision-holder">
               <img class="img3" src="./images/vision3.png" alt=""> 
               <h4>Raising Awareness:<br> Educate,<br> Inspire, Transform
               </h4>
-              <p>Nourish360 is not just about immediate action; it's also about raising awareness. We believe in the transformative power of education and understanding. Through advocacy programs, outreach initiatives, and educational campaigns, we aim to inform and inspire communities to actively participate in the pursuit of a hunger-free world.</p></div>
-        </div>
+              </div>
     </div>
     <div class="work">
       <h1 class="h1">HOW DO WE WORK?</h1>
       <div class="works">
-        <div><img class="img1" src="./images/truck.png" alt="">
+        <div id="work-holder"><img class="img1" src="./images/truck.png" alt="">
         <p>Mobile Food Libraries: Redefining Hunger Relief</p></div>
-        <div><img src="./images/organisation.png" alt=""> <p>Empowering Organizations: The Catalysts for Change</p></div>
-        <div><img class="img2" src="./images/volunteer.png" alt=""> <p>Volunteers: The Heartbeat of Nourish360</p></div>
+        <div id="work-holder"><img src="./images/organisation.png" alt=""> <p>Empowering Organizations: The Catalysts for Change</p></div>
+        <div id="work-holder"><img class="img2" src="./images/volunteer.png" alt=""> <p>Volunteers: The Heartbeat of Nourish360</p></div>
     </div>
     </div>
     <div class="upcoming">
-      <h1 class="h1">UPCOMING EVENTS</h1>
+      <h1 class="h1 hover-underline-animation">UPCOMING EVENTS</h1>
       <div class="event-calendar">
         <div class="events-body">
           <ul>
@@ -149,8 +170,7 @@
                <div>
                 <button class="donate buttons">DONATE</button>
                </div>
-            </li>
-            
+               </li>
              <li>
                <a href="">
               <div class="event-left-content">
@@ -168,12 +188,9 @@
                <div >
                 <button class="donate buttons">DONATE</button>
                </div>
-            </li>
-                
-                
+            </li> 
           </ul>
-        </div>
-        
+        </div> 
       </div>
     </div>
     <div class="past-events">
@@ -260,12 +277,6 @@
             </div>
         </div>
     </div>
-
-  
-    </div>
-    <div class="downloads">
-      <img src="" alt="">
-      <img src="" alt="">
     </div>
     <footer class="footer">
       <div class="container row">
