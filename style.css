@@ -86,21 +86,22 @@ body{
   z-index: 1000; /* Ensure a high z-index */
 }
 .top-bar__nav-toggle {
-  margin: 0px 100px;
+  margin: 0px 10px 8px 0px;
   display: inline-block;
   color: var(--tbv-color);
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 50px;
-  min-width: 55px;
+  font-size: 4vw;
+  min-width: 5vw;
   text-align: center;
   transition: 0.25s;
+  transform: scale(0.77);
 }
 
 .top-bar__nav-toggle:focus {
   outline: none;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .top-bar__brand {
@@ -1136,7 +1137,49 @@ button#top-nav-toggle.top-bar__nav-toggle span{
   }
 }
 @media (max-width: 500px){
-
+  .mySlides img{
+    top:10vw;
+    height: 60vh;
+  }
+  .about{
+    top:62.5vh;
+  }
+  .visions{
+    display: grid;
+  }
+  #vision-holder{
+    width:30vw;
+  }
+  .vision{
+    padding-top: 7vw;
+    top:63vh;
+    height: 60vh;
+  }
+  .vision h4{
+    font-size: 2.3vw;
+    position: relative;
+    left: 2.7vw;
+  }
+  .visions .img1{
+      width:25vw;
+      left:-3vw;
+  }
+  .visions .img2{
+    left:-2.5vw;
+    width:24vw;
+  }
+  .visions .img3{
+    left: -4vw;
+    width:27vw;
+  }
+  .work{
+    padding-top: 7vw;
+    height:45vh;
+    top:3.5vh;
+  }
+  .works{
+    display:grid;
+  }
 }
 @media (max-width: 450px)
 {
@@ -1251,7 +1294,7 @@ button#top-nav-toggle.top-bar__nav-toggle span{
   .footer{
     top:6vh;
   }
-  #register{
+  .top-bar #register{
     padding-right:2vw ;
     width: 14vw;
     font-size: 0.55rem;
@@ -1263,14 +1306,17 @@ button#top-nav-toggle.top-bar__nav-toggle span{
     height: 16vw !important;
   }
   .top-bar #register{
-    width: 25vw;
+    width: 24vw;
     
   }
   .top-bar #register a{
-    font-size: 4.5vw;
+    font-size: 3vw;
   }
   a .top-bar .logo{
-   width: 60vw;
+   width: 50vw;
+  }
+  .top-bar__nav-toggle span {
+    /* Adjust the margin-right value to reduce the distance between span tags */
   }
 }
 @media (max-width: 415px){
