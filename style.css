@@ -445,24 +445,6 @@ img {vertical-align: middle;}
   left: -4vw;
   width:20vw;
 }
-/* @media (max-width: 1000px)  {
-  .about{
-    top:90vh;
-    padding-top: 6vw;
-    padding-bottom: 6vw;
-  }
-  .mySlides img{
-    height: 80vh;
-  }
-  .about-para{
-    font-size:1rem;
-  }
-  /* .visions{
-
-  }
-   */
-
-
 .work{
   position: relative;
   top:7vh;
@@ -1080,9 +1062,9 @@ h1.community{
   }
   button#top-nav-toggle.top-bar__nav-toggle{
    top:-2.6vw;
-  
+   width:10vw;
 }
-    button#top-nav-toggle.top-bar__nav-toggle span{
+button#top-nav-toggle.top-bar__nav-toggle span{
   width:10vw;
   height: 1vw;
 }
@@ -1153,7 +1135,10 @@ h1.community{
       top: 10%;
   }
 }
-@media (max-width: 500px)
+@media (max-width: 500px){
+
+}
+@media (max-width: 450px)
 {
  
   .mySlides img{
