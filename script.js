@@ -106,7 +106,7 @@ auth0.createAuth0Client({
 domain: "dev-wx0wzhodkgnv7da8.us.auth0.com",
 clientId: "WXABgo1dR1R1q8kYAOPXK1xc8ck6jqjK",
 authorizationParams: {
-  redirect_uri: "http://127.0.0.1:5501/index.html"
+  redirect_uri: "https://neha2003-me.github.io/Nourish360/"
 }
 }).then(async (auth0Client) => {
 // Assumes a button with id "login" in the DOM
