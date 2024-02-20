@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="donateStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1> DONATE</h1>
+        <!-- <h4>Sharing more than a meal</h4> -->
+        <div class="options">
+            <h2>Choose an amount:</h2>
+        </div>
+
+        <div class="amount-options">
+            <button class="amount-option" onclick="selectAmount(100)">Rs 100</button>
+            <button class="amount-option" onclick="selectAmount(500)">Rs 500</button>
+            <button class="amount-option" onclick="selectAmount(1000)">Rs 1000</button>
+            <button class="amount-option" onclick="selectAmount(2000)">Rs 2000</button>
+        </div>
+
+        <div class="custom-amount">
+            <input type="number" id="custom-amount-input" placeholder="Enter Amount">
+            <div class="monthly-donation">
+                <input type="checkbox" id="monthly-donation-checkbox">
+                <label for="monthly-donation-checkbox">Make this a monthly donation</label>
+            </div>
+            <button onclick="donateCustomAmount()">Confirm Amount</button>
+        </div>
+        <div class="note">
+            <!-- <h2>Note you would like to share</h2> -->
+            <textarea id="note-text" placeholder="A note you'd like to share with your donation..."></textarea>
+        </div>
+
+        <div class="additional-info">
+            <button onclick="submitDonation()">Donate</button>
+        </div>
+        <div class="dyk">
+            
+            <ul>
+                
+                <li>A payment of Rs 1000 can feed upto 10 people.
+                    <a href="link1.html">Click here to explore statistics related to hunger.</a></li>
+                <li>Our weekly food libraries are a unique initiative in eradicating hunger in local communities. <a href="link2.html">Click here to learn more about our food libraries.</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    
+
+    <script src="donateScript.js"></script>
+</body>
+</html>
