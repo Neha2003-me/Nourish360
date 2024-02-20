@@ -1,0 +1,152 @@
+body, html {
+    background-image: url('stat.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-position: center center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .main {
+    background-color: none;
+    color:#fb5757;
+    padding: 20px;
+    font-size: 4rem;
+    text-align: center;
+    opacity: 0.87;
+    order: -1; 
+  }
+  
+  .image-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex: 0 0 30%; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: auto; 
+    border: 2px solid transparent; 
+    transition: border 0.5s ease-in-out;
+    height:30vh;
+    width:40vh;
+    border: 2px solid #9ed1e1; 
+  }
+  
+  
+  .donate a img{
+    position: fixed;
+    width: 10vw;
+    margin-left:0px;
+    height:8vw;
+    bottom:8vw;
+    z-index:99;
+    left:1vw;
+    border: none;
+  }
+  
+  .donate img{
+    transition: 1s ease;
+    }
+    
+    .donate img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+  
+      
+      
+  
+  
+  
+  p {
+    font-size: 1.75rem;
+    margin-top: 20px;
+  }
+  
+  .statistics {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(29, 29, 29, 0.7);
+    border-radius: 10px;
+    color:#fff;
+  }
+  
+  ul {
+    list-style-type:circle;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(29, 29, 29, 0.7);
+    color:#fff;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+  
+    .image-row {
+      flex-direction: column;
+      align-items: center; 
+    }
+    .image-container {
+      flex: 0 0 100%; 
+      /* align-items: center;
+      justify-content: center; */
+    }
+  }
+  
+  @media(max-width: 1100px) {
+    .donate a img{
+      bottom:20vw;
+      width:15vw;
+      height:10vw;
+    }
+  }
+  @media(max-width: 500px)
+  {
+    .donate a img{
+      bottom:20vw;
+      width:20vw;
+      height:18vw;
+    }
+  }
