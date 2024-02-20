@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My pets</title>
+    <meta charset="UTF-8" />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f1f3f6;
+  color: #1c2430;
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0.6rem;
+}
+h6{
+    font-size: 1rem;
+    margin:  1rem 0 0 0;
+}
+h5{
+    font-size: 3rem;
+    margin:1rem 0 0 0;
+}
+main {
+  max-width:70%;
+  margin: 2rem auto;
+  
+}
+
+main > div {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+li {
+  list-style-type: none;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  text-align: justify;
+}
+li:hover{
+    border: 2px solid #ff575729;
+}
+    </style>
+  </head>
+ 
+  <body>
+    <header><h1>Blogs</h1></header>
+    <main>
+        <ul>
+            <li>Loading Blogs...</li>
+        </ul>
+    </main>
+    <script>
+      // Select the DOM-element, so that you can replace it with content   https://hpkr83.csb.app/
+      let PROJECT_ID = "tefcyw25";
+      let DATASET = "production";
+      let QUERY = encodeURIComponent('*[_type == "blog"]');
+
+      // Compose the URL for your project's endpoint and add the query
+      let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
+
+      // fetch the content
+      fetch(URL)
+        .then((res) => res.json())
+        .then(({ result }) => {
+          let blogs = document.querySelector('ul');
+          let firstBlog = document.querySelector('ul li');
+          if (result.length > 0) {
+            // remove the placeholder content
+            blogs.removeChild(firstBlog);
+            result.forEach((blog) => {
+              // create a list element for each blog
+              let dataInBlog = document.createElement('li');
+              // concatenate date and name of the event
+              let date=document.createElement('h6');
+              let event=document.createElement('h5');
+              let content=document.createElement('p');
+              date.textContent = `${blog.date}`;
+              event.textContent=`${blog.name}`;
+              content.textContent=`${blog.content}`;
+              // add the item to the list
+             
+              dataInBlog.appendChild(event);
+              dataInBlog.appendChild(date);
+              dataInBlog.appendChild(content);
+              blogs.appendChild(dataInBlog);
+            });
+          }
+        })
+        .catch((err) => console.error(err));
+    </script>
+  </body>
+</html>
