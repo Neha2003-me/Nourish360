@@ -13,17 +13,18 @@
       <div class="navigation">
         <div class="logo"><img src="images/nourish.png" alt=""></div>
         <div class="donate">
-          <a href="#">
+          <a href="donate.html" target="_blank">
             <img src="images/donateUs.png" alt="">
           </a>
         </div>
         <div>
            <ul class="nav">
             <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">CONTACT US</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="#"><button id="register"><a href="registerPage.html" target="_blank">REGISTER</a></button></a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li id="login"><a>LOGIN</a></li>
+            <li id="logout"><a>LOGOUT</a></li>
+            <li id="signup"><a href="#"><button id="register"><a href="registerPage.html" target="_blank">REGISTER</a></button></a></li>
+            <p id="profile"></p>
            </ul>
         </div>
       </div>
@@ -42,7 +43,7 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><a href="blog.html">BLOG</a></li>
           </ul>
         </nav>
       </div>
@@ -127,7 +128,7 @@
         <div id="work-holder"><img class="img1" src="./images/truck.png" alt="">
         <p>Mobile Food Libraries: Redefining Hunger Relief</p></div>
         <div id="work-holder"><img src="./images/organisation.png" alt=""> <p>Empowering Organizations: The Catalysts for Change</p></div>
-        <div id="work-holder"><img class="img2" src="./images/volunteers.png" alt=""> <p>Volunteers: The Heartbeat of Nourish360</p></div>
+        <div id="work-holder"><img class="img2" src="./images/volunteer.png" alt=""> <p>Volunteers: The Heartbeat of Nourish360</p></div>
     </div>
     </div>
     <div class="upcoming">
@@ -150,6 +151,7 @@
               </div>
                </a>
                <div >
+                <a id="maps" href="maps.html" target="_blank"><img src="/images/google_maps.png" style="height: 3vw; width: 2vw; position: absolute; bottom: 3.4vw; left:78vw" alt="maps"></a>
                 <button class="buttons join">JOIN</button>
                </div>
             </li>
@@ -167,7 +169,8 @@
                 <div class="date">01 </div> 
               </div>
                </a>
-               <div>
+               <div >
+                <a id="maps" href="maps.html" target="_blank"><img src="/images/google_maps.png" style="height: 3vw; width: 2vw; position: absolute; bottom: 3.4vw; left:78vw" alt="maps"></a>
                 <button class="donate buttons">DONATE</button>
                </div>
                </li>
@@ -177,7 +180,7 @@
                 <div class="title-event">
                    <h2> sample event</h2>
                   <div class="event-date"> Feb 5, 2018</div>
-                  <div class="event-location"> Alberta</div>
+                  <div class="event-location"> Alberta </div>
                 </div>
               </div>
               <div class="event-icon"> 
@@ -186,6 +189,7 @@
               </div>
                </a>
                <div >
+                <a id="maps" href="maps.html" target="_blank"><img src="/images/google_maps.png" style="height: 3vw; width: 2vw; position: absolute; bottom: 3.4vw; left:78vw" alt="maps"></a>
                 <button class="donate buttons">DONATE</button>
                </div>
             </li> 
@@ -306,6 +310,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
