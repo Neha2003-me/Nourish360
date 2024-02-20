@@ -14,7 +14,7 @@ body{
     padding: 0;
     overflow-x: hidden;
    color:black;
-   /* background-color: #DDD; */
+
 }
 *::selection{
   background-color: #9ED1E1;
@@ -25,6 +25,23 @@ body{
 .top-bar{
   visibility: hidden;
 }
+#profile{
+  display: flex;
+  align-items: center;
+  height:0vw;
+}
+#profile p{
+  padding: 0;
+  margin-left:2vw ;
+  font-size:1.2vw;
+  width: 10vw;
+}
+#profile img{
+  padding: 0;
+  width:3vw;
+  height:3vw;
+  border-radius: 50%;
+}
 .nav{
     display: flex;
     position: absolute;
@@ -34,10 +51,54 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.nav li{
-  padding-left: 1.3vw;
-  padding-right: 1.3vw;
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
+.nav li {
+  padding: 10px 20px;
+  border: 1px solid #0000003c;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.nav li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ff5757;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+.nav li:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+.nav li a {
+  color: #000000bb;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+
+.nav li:hover a {
+  color: #fff;
+}
+.nav li + li {
+  margin-left: 1vw; 
+}
+
 .navigation{
   background-color: rgb(241, 239, 239);
   height:30vh;
@@ -45,19 +106,13 @@ body{
   width: 100%;
   z-index: 99;
 }
-.nav a:hover{
-  color: #FF5757;
-}
 #register{
-    background-color:#FF5757;
-    width:8vw;
-    padding: 0.4rem;
-    color:white;
-    font-size: 1.2vw;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(206, 204, 204, 0.823);
+  border-width: 0;
+  padding:0;
+  text-align: left;
 }
+
+
 /* Imported styles */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
@@ -83,7 +138,7 @@ body{
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  z-index: 1000; /* Ensure a high z-index */
+  z-index: 1000; 
 }
 .top-bar__nav-toggle {
   margin: 0px 10px 8px 0px;
@@ -140,7 +195,7 @@ body{
   font-size: 35px;
 }
 .top-bar__nav {
-  /* Example adjustment */
+ 
   position: absolute;
   top: 100%; /* Position below the top-bar */
   left: 0;
@@ -195,7 +250,7 @@ body{
 .top-bar__nav-list a:hover {
   transform: scale(1.2);
   filter: brightness(140%);
-  border-bottom: 2px solid var(--tbv-color);
+  border-bottom: 2px solid #FF5757;
 }
 
 /* Hamburger menu styles */
@@ -262,6 +317,12 @@ body{
   width:13vw;
   left:1vw;
 }
+
+#maps:hover{
+  opacity: 1;
+
+}
+
 /* Slideshow container */
 #slideshow-container {
   width: 98vw;
@@ -333,9 +394,29 @@ img {vertical-align: middle;}
   position: relative;
   left:4vw;
 }
-#register a:hover{
-  color:#DDD;
+/* the popping animation for main elemnts of main page */
+
+.about h1 {
+  transition: transform 0.3s ease-in-out;
 }
+
+.about h1:hover {
+  transform: scale(1.1);
+}
+
+.vision h1 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.vision h1:hover {
+  transform: scale(1.1);
+}
+
+
+/* end of the popping animation for main elemnts of main page */
+
+
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -416,17 +497,22 @@ img {vertical-align: middle;}
     position: relative;
     padding: 2vw;
 }
-#vision-holder{
-  background-color: #f9f7f7c1; 
+#vision-holder {
+  background-color: #f9f7f7c1;
   box-shadow: 4px 4px 4px 4px #9d9c9c75;
   margin: 2vw;
   display: flex;
   width: 22vw;
-  flex-direction:column;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition property */
 }
-#vision-holder:hover{
-  scale:1.03;
+
+#vision-holder:hover {
+  transform: scale(1.03);
+  box-shadow: 8px 8px 8px 8px #9d9c9c75; /* Add the desired box shadow on hover */
 }
+
+
 .vision h4{
   font-size: 1.8vw;
   position: relative;
@@ -446,6 +532,7 @@ img {vertical-align: middle;}
   left: -4vw;
   width:20vw;
 }
+
 .work{
   position: relative;
   top:7vh;
@@ -460,17 +547,21 @@ img {vertical-align: middle;}
   justify-content: center;
 }
 
-#work-holder{
-width:20vw;
-position: relative;
-left:2vw;
-margin: 2vw;
-background-color: #9ED1E1;
-box-shadow: 4px 4px 4px 4px #9d9c9c75;
+#work-holder {
+  background-color: #f9f7f7c1;
+  box-shadow: 4px 4px 4px 4px #9d9c9c75;
+  margin: 2vw;
+  display: flex;
+  width: 22vw;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition property */
 }
-#work-holder:hover{
-  scale: 1.02;
+
+#work-holder:hover {
+  transform: scale(1.03);
+  box-shadow: 8px 8px 8px 8px #9d9c9c75; /* Add the desired box shadow on hover */
 }
+
 .works img{
   width: 20vw;
 }
@@ -848,24 +939,42 @@ ul {
   padding: 0 1vw;
 }
 
+
 .footer-col h4 {
-  font-size: 1.3vw;
-  color: #FFF;
-  text-transform: capitalize;
-  margin-bottom: 3vw;
-  font-weight: 500;
   position: relative;
+  overflow: hidden;
+  display: inline-block; 
+  color: #fff; 
+  font-weight: 200; 
+}
+
+.footer-col h4::before,
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5757; 
+  bottom: 0;
+  transform-origin: bottom;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .footer-col h4::before {
-  content: "";
-  position: absolute;
   left: 0;
-  bottom: -0.6vw;
-  background-color:#FF5757;
-  width: 4vw;
-  height: 2px;
 }
+
+.footer-col h4::after {
+  right: 0;
+}
+
+.footer-col h4:hover::before,
+.footer-col h4:hover::after {
+  transform-origin: bottom;
+  transform: scaleX(1);
+}
+
 
 .footer-col ul li:not(:last-child) {
   margin-bottom: 0.7vw;
@@ -1294,6 +1403,9 @@ button#top-nav-toggle.top-bar__nav-toggle span{
   .footer{
     top:6vh;
   }
+  .top-bar #register a:hover{
+    color:white;
+  }
   .top-bar #register{
     padding-right:2vw ;
     width: 14vw;
@@ -1306,6 +1418,7 @@ button#top-nav-toggle.top-bar__nav-toggle span{
     height: 16vw !important;
   }
   .top-bar #register{
+  
     width: 24vw;
     
   }
@@ -1315,9 +1428,7 @@ button#top-nav-toggle.top-bar__nav-toggle span{
   a .top-bar .logo{
    width: 50vw;
   }
-  .top-bar__nav-toggle span {
-    /* Adjust the margin-right value to reduce the distance between span tags */
-  }
+ 
 }
 @media (max-width: 415px){
 .work{
