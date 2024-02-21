@@ -42,6 +42,12 @@ body{
   height:3vw;
   border-radius: 50%;
 }
+.donate img:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+  }
 .nav{
     display: flex;
     position: absolute;
