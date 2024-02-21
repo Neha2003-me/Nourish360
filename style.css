@@ -331,6 +331,35 @@ body{
   margin: auto;
 
 }
+.contribute{
+ width: 100%;
+text-align: center;
+margin: 0;
+padding: 0;
+font-size: 2vw;
+background-color: #ff5757;
+}
+.contribute h2{
+  margin: 0;
+}
+.task{
+  font-size: 2vw;
+  border: none;
+  position: relative;
+  left:40%;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+  padding: 0 2vw 0 2vw;
+  background-color: #ff5757;
+  color: #fff;
+}
+.task a{
+  color: white;
+}
+.task:hover{
+  transform: scale(1.1);
+}
 .mySlides img{
   height: 100vh;
   box-shadow:3px 3px 3px 3px #777474;
