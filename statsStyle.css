@@ -1,5 +1,5 @@
 body, html {
-    background-image: url('.images/stat.jpg');
+    background-image: url('./images/stat.jpg');
     background-size: cover; 
     background-attachment: fixed;
     margin: 0;
