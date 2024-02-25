@@ -154,7 +154,7 @@ stats-button a img {
   .stats-button a img {
     position: fixed;
     width: 15vw;
-    bottom:42vw;
+    bottom:28vw;
     z-index:99;
     left:-1vw;
   
