@@ -118,7 +118,349 @@ body{
   text-align: left;
 }
 
+stats-button a img {
+  position: fixed;
+  width: 12vw;
+  bottom:28vw;
+  z-index:99;
+  left:-0.8vw;
 
+}
+/* stats button adjustment */
+@media (max-width: 2400px){
+.stats-button a img {
+  position: fixed;
+  width: 12vw;
+  bottom:33vw;
+  z-index:99;
+  left:-0.8vw;
+
+}
+}
+@media (max-width: 1700px)
+{
+  .stats-button a img {
+    position: fixed;
+    width: 13.2vw;
+    bottom:30vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+
+@media (max-width: 1500px)
+{
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:42vw;
+    z-index:99;
+    left:-1vw;
+  
+  }
+}
+@media (max-width: 1370px)
+{
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:46vw;
+    z-index:99;
+    left:-1vw;
+  
+  }
+}
+@media (max-width: 1300px)
+{
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:49vw;
+    z-index:99;
+    left:-1vw;
+  
+  }
+}
+@media (max-width: 1250px)
+{
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:54vw;
+    z-index:99;
+    left:-1.7vw;
+  
+  }
+}
+@media (max-width: 1200px){
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:55vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+
+}
+@media (max-width: 1150px){
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:57vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+
+}
+@media (max-width: 1050px){
+  .stats-button a img {
+    position: fixed;
+    width: 15vw;
+    bottom:67vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+
+}
+@media (max-width: 1000px){
+
+  .stats-button{
+    visibility: visible;
+  }
+  
+.stats-button a img {
+  position: fixed;
+  width: 15vw;
+  bottom:64vw;
+  z-index:99;
+  left:-0.8vw;
+
+}
+
+
+}
+@media (max-width: 950px){
+
+  .stats-button{
+    visibility: visible;
+  }
+  
+.stats-button a img {
+  position: fixed;
+  width: 15vw;
+  bottom:70vw;
+  z-index:99;
+  left:-0.8vw;
+
+}
+
+}
+
+
+@media (max-width: 900px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:70vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+@media (max-width: 850px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:78vw;
+    z-index:99;
+    left:-1.7vw;
+  
+  }
+}
+@media (max-width: 800px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:86vw;
+    z-index:99;
+    left:-1.7vw;
+  
+  }
+}
+@media (max-width: 750px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:92vw;
+    z-index:99;
+    left:-1.7vw;
+  
+  }
+}
+@media (max-width: 700px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:100vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+@media (max-width: 650px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:112vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+@media (max-width: 600px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:123vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+@media (max-width: 570px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:130vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+@media (max-width: 540px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:141vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+@media (max-width: 500px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:155vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+
+@media (max-width: 450px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:175vw;
+    z-index:99;
+    left:-0.8vw;
+  
+  }
+}
+@media (max-width: 460px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:180vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+@media (max-width: 420px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 18vw;
+    bottom:195vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+
+@media (max-width: 400px) 
+{
+  .stats-button{
+    visibility: visible;
+  }
+  .stats-button a img {
+    position: fixed;
+    width: 19vw;
+    bottom:203vw;
+    z-index:99;
+    left:-1.9vw;
+  
+  }
+}
+
+/* stats button adjustment */
 /* Imported styles */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
